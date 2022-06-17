@@ -12,13 +12,13 @@ export default function App() {
   const tempArray = [];
 
   useEffect(() => {
+    setInterval(function() {setIsLoading(false)}, 1000);
     getMintedNft();
   }, []);
 
-  const getMintedNft = async () => {
+  const getMintedNft = () => {
     // const res = await getNft();
     getNft().then(res => {
-      setIsLoading(false);
       console.log('res - ', res);
       setNftData(res);
     });    
