@@ -36,9 +36,9 @@ export default function App() {
             tempArray.push(selectedData);
             console.log('tempArray - ', tempArray);
             transferNft(tempArray);
-          }
+          }return 0
         })
-      }
+      }return 0
     }); 
   }
 
