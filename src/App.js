@@ -5,7 +5,6 @@ import { Button } from 'react-bootstrap';
 import Papa from "papaparse";
 
 export default function App() {
-  const [tokenId, setTokenId] = useState([]);
   const [csvData, setCsvData] = useState([]);
   const [nftData, setNftData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
